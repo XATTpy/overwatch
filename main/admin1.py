@@ -1,7 +1,7 @@
 from django.contrib import admin
 from .models import Hero, Video, Comment
 
-class VideoInline(admin.StackedInline):
+class эщкере:
     model = Comment
     readonly_fields = ['Comment_likes']
     extra = 2
