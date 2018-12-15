@@ -1,0 +1,31 @@
+{% extends 'maintemplate.html' %}
+{% block highlights %}
+
+<title>{{ her.Hero_name }}</title>
+
+<style>
+  body, html {height: 100%}
+    .bgimg {
+        background-image: url('{{ her.Hero_bg }}');
+        min-height: 100%;
+        background-position: center;
+        background-size: cover;
+  }
+</style>
+
+<body>
+<div class="w3-display-middle">
+  <H1 class="w3-jumbo w3-animate-top">{{ her.Hero_name }}
+  <hr class="w3-border-white" style="margin:auto;width:100%"></H1>
+    {% for vid in vids %}
+    <div style="float:left; width: 225px">
+      <iframe width="200" height="200" src={{ vid.Video_url }} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <h3 class="w3-animate-top">
+        <a href="/main/highlights/{{ her.id }}/showOne/{{ vid.id }}">{{ vid.Video_name }}</a>
+      </h3>
+    </div>
+    {% endfor %}
+</div>
+</body>
+
+{% endblock %}

@@ -1,0 +1,11 @@
+@font-face{
+font-family: 'BigNoodleTooOblique';
+src: url('../fonts/BigNoodleTooOblique.eot');
+src: url('../fonts/BigNoodleTooOblique.eot?iefix') format('eot'),
+url('../fonts/BigNoodleTooOblique.woff') format('woff'),
+url('../fonts/BigNoodleTooOblique.ttf') format('truetype'),
+url('../fonts/BigNoodleTooOblique.svg#webfont') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+

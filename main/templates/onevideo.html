@@ -1,0 +1,55 @@
+{% extends 'maintemplate.html' %}
+{% block onevideo %}
+{% load staticfiles %}
+
+<title>{{ hero.Hero_name }}</title>
+
+<style>
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+
+body {
+ background-image: url('{{ hero.Hero_bg }}');
+ min-height: 100%;
+ background-attachment:fixed;
+ background-size: cover;
+}
+
+  .leftimg {
+    float:left;
+   }
+</style>
+
+<body>
+
+<div class="w3-display-topmiddle">
+    <iframe width="700" height="360" src={{ video.Video_url }} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <H1>{{ video.Video_name }}</H1>
+    <i><h4>{{ video.Video_dis }}</h4></i>
+    <h5>Дата добавления: {{ video.Video_date }}</h5>
+    <img src="{% static 'like.png' %}" width="40px" id="like" name="{{ video.id }}"><h5 id="count_likes" class="leftimg">{{ video.Video_likes }}</h5><hr>
+        {% for com in comments %}
+            <i><h4>{{ com.0.Comment_text }}</h4></i>
+            <h5>Дата добавления: {{ com.0.Comment_data }}</h5>
+                <img src="{% static 'like.png' %}" width="40px" id="like_com" name="{{ comment.id }}"><h5 id="count_likes_com" class="leftimg"> {{ com.0.Comment_likes }}</h5>
+            <h4>Комментарий оставил: {{ com.1 }}</h4><hr>
+        {% endfor %}
+
+
+<h5>
+        {% if user %}
+		<form action="/main/addcomment/{{video.id}}/" method = "post"> {% csrf_token %}{{ form }}
+            <input type="submit" class="button"  value="Добавить коментарий">
+        </form>
+        {% else %}
+        <h3>Войдите чтобы оставить комментарий</h3>
+        {% endif %}
+</h5>
+</div>
+</body>
+
+{% endblock %}
