@@ -1,0 +1,35 @@
+{% extends 'maintemplate.html' %}
+
+{% block index %}
+
+<title>Overwatch: XATT</title>
+
+<style>
+  body, html {height: 100%}
+    .bgimg {
+        background-image: url('https://bnetcmsus-a.akamaihd.net/cms/page_media/3IDDTL5QAPON1516141976279.jpg');
+        min-height: 100%;
+        background-position: center;
+        background-size: cover;
+  }
+</style>
+
+<body>
+<div class="w3-display-middle">
+  <h1 class="w3-jumbo w3-animate-top">МОИ ХАЙЛАЙТЫ:
+  <hr class="w3-border-white" style="margin:auto;width:100%"></h1>
+
+{% for con in content %}
+<div style="float:left; width: 20%">
+ <div class="w3-display-container w3-hover-opacity" style="width:125px">
+  <h1 class="w3-jumbo w3-animate-top"><img src="{{ con.Hero_url }}" alt="Avatar" style="width:125px"></h1>
+  <h3 class="w3-animate-top"><div class="w3-display-bottommiddle">
+    <a href="/main/highlights/{{ con.id }}"><button class="w3-button w3-light-blue">{{ con.Hero_name }}</button></a>
+ </div></h3>
+ </div>
+</div>
+{% endfor %}
+</div>
+</body>
+
+{% endblock %}

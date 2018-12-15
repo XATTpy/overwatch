@@ -1,0 +1,29 @@
+{% extends 'maintemplate.html' %}
+{% block sign %}
+
+<title>Регистрация</title>
+
+<style>
+  body, html {height: 100%}
+    .bgimg {
+        background-image: url('https://d1u1mce87gyfbn.cloudfront.net/media/wallpaper/mercy-theatrical-wide.jpg');
+        min-height: 100%;
+        background-position: center;
+        background-size: cover;
+  }
+</style>
+
+<body>
+<div class="w3-display-middle">
+    <h2>
+        <form action="{{ url }}" method = "post"> {% csrf_token %}{{ form }}
+            <input type="submit" class="button" value="SIGN">
+        </form>
+        {% if error %}
+            <h1>{{ error }}</h1>
+        {% endif %}
+    </h2>
+</div>
+</body>
+
+{% endblock %}

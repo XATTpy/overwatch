@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+
+<html lang="en">
+<meta charset="UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="{% static 'static/css/styles.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'static/css/fonts/stylesheet.css' %}">
+
+<style>
+
+  body, h1, h2, h3 {font-family: "BigNoodleTooOblique"}
+
+  h4, h5 {font-family: "Helvetica"}
+
+</style>
+
+<body>
+
+  <div class="bgimg w3-display-container w3-animate-opacity w3-text-light-blue">
+    <div class="w3-display-topright w3-padding-large w3-xlarge">
+      {% if user.is_authenticated %}
+        <h3>{{ user }}</h3>
+        <a href="/main/out/">Выйти</a><br>
+      {% else %}
+        <a href="/main/sign/">Регистрация</a>
+        <a href="/main/in/">Войти</a><br>
+      {% endif %}
+    </div>
+    {% block index %}{% endblock %}
+    {% block highlights %}{% endblock %}
+    {% block onevideo %}{% endblock %}
+    {% block sign %}{% endblock %}
+    <div class="w3-display-topleft w3-padding-large w3-xlarge">
+      <a href="{% url 'index' %}"><img src="{% static 'text.png' %}" width="350px"></a>
+    </div>
+  </div>
+
+</body>
+
+</html>
