@@ -3,20 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="59d0c332-b60a-481b-afc7-b7af719e8c76" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/static/css/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/maintemplate.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/maintemplate.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/onevideo.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/onevideo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/urls_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/urls_main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/overwatch/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/overwatch/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/fonts/BigNoodleTooOblique.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/fonts/BigNoodleTooOblique.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/fonts/BigNoodleTooOblique.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/fonts/stylesheet.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/fonts/webfontkit-20181204-111253.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/styles.css" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/overwatch/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="27" column="17" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="17" />
+            <state relative-caret-position="340">
+              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
             </state>
           </provider>
         </entry>
@@ -104,11 +91,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/templates/maintemplate.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+            <state relative-caret-position="255">
+              <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -149,7 +136,6 @@
         <option value="$PROJECT_DIR$/main/form.py" />
         <option value="$PROJECT_DIR$/main/models.py" />
         <option value="$PROJECT_DIR$/main/templates/sign.html" />
-        <option value="$PROJECT_DIR$/overwatch/settings.py" />
         <option value="$PROJECT_DIR$/main/static/script.js" />
         <option value="$PROJECT_DIR$/main/urls_main.py" />
         <option value="$PROJECT_DIR$/main/views.py" />
@@ -157,6 +143,7 @@
         <option value="$PROJECT_DIR$/main/templates/maintemplate.html" />
         <option value="$PROJECT_DIR$/main/templates/index.html" />
         <option value="$PROJECT_DIR$/main/templates/onevideo.html" />
+        <option value="$PROJECT_DIR$/overwatch/settings.py" />
       </list>
     </option>
   </component>
@@ -175,28 +162,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="overwatch" type="b2602c69:ProjectViewProjectNode" />
-              <item name="overwatch" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="overwatch" type="b2602c69:ProjectViewProjectNode" />
-              <item name="overwatch" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="overwatch" type="b2602c69:ProjectViewProjectNode" />
-              <item name="overwatch" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -435,13 +401,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/overwatch/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="27" column="17" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -485,8 +444,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main/templates/maintemplate.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+        <state relative-caret-position="255">
+          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/overwatch/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
