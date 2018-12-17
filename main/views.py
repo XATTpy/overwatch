@@ -1,11 +1,12 @@
 from django.shortcuts import render, redirect
 from .models import Hero, Video, Comment
-from django.http import HttpResponse
 from django.contrib.auth import get_user_model
-User = get_user_model()
 from . import form
 from django.template.context_processors import csrf
 from django.contrib import auth
+from django.http import HttpResponse
+
+User = get_user_model()
 
 def index(request):
     content = []
@@ -53,7 +54,6 @@ def ShowOne(request, video_id):
         )
 
 def addcomment(request, video_id):
-
     if request.POST:
         forma = form.CommentForm(request.POST)
         if forma.is_valid():
@@ -105,3 +105,16 @@ def inn(request):
         args['form'] = form.UserFormL
         args['url'] = '/main/in/'
         return render(request, 'sign.html', args)
+
+def addliketovideo(request, video_id):
+    video = Video.objects.get(id=video_id)
+    video.Video_likes += 1
+    video.save()
+    return redirect('/main/showOne/' + str(video_id))
+
+def addliketocomment(request, comment_id):
+    comment = Comment.objects.get(id = comment_id)
+    comment.Comment_likes += 1
+    comment.save()
+    idvideo = comment.Comment_Video_id
+    return redirect('/main/showOne/' + str(idvideo))

@@ -1,21 +1,32 @@
 <!DOCTYPE html>
+<html lang="en">
 
 {% load staticfiles %}
 
-<html lang="en">
-<meta charset="UTF-8">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" type="text/css" href="{% static 'static/css/styles.css' %}">
-<link rel="stylesheet" type="text/css" href="{% static 'static/css/fonts/stylesheet.css' %}">
+
+<head>
+  <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}"/>
+</head>
 
 <style>
+  @font-face{
+    font-family: BigNoodleTooOblique;
+    src: url('css/fonts/BigNoodleTooOblique.eot');
+    src: url('css/fonts/BigNoodleTooOblique.eot?iefix') format('eot'),
+    url('css/fonts/BigNoodleTooOblique.woff') format('woff'),
+    url('css/fonts/BigNoodleTooOblique.ttf') format('truetype'),
+    url('css/fonts/BigNoodleTooOblique.svg#webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
 
-  body, h1, h2, h3 {font-family: "BigNoodleTooOblique"}
+  body, h1, h2, h3 {font-family: BigNoodleTooOblique}
 
   h4, h5 {font-family: "Helvetica"}
-
 </style>
 
 <body>

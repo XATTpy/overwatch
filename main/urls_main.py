@@ -10,4 +10,6 @@ urlpatterns = [
     url('sign/', views.sign),
     url('in/', views.inn),
     url('out/', views.out),
+    url('addliketovideo/(?P<video_id>\d+)/$', views.addliketovideo),
+    url('addliketocomment/(?P<comment_id>\d+)/$', views.addliketocomment),
 ]
