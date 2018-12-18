@@ -15,11 +15,10 @@
 <style>
   @font-face{
     font-family: BigNoodleTooOblique;
-    src: url('css/fonts/BigNoodleTooOblique.eot');
-    src: url('css/fonts/BigNoodleTooOblique.eot?iefix') format('eot'),
-    url('css/fonts/BigNoodleTooOblique.woff') format('woff'),
-    url('css/fonts/BigNoodleTooOblique.ttf') format('truetype'),
-    url('css/fonts/BigNoodleTooOblique.svg#webfont') format('svg');
+    src: {% static 'css/fonts/BigNoodleTooOblique.eot' %};
+    src: {% static 'css/fonts/BigNoodleTooOblique.eot?iefix' %} format('eot'),
+    {% static 'css/fonts/BigNoodleTooOblique.woff' %} format('woff'),
+    {% static 'css/fonts/BigNoodleTooOblique.ttf' %} format('truetype'),
     font-weight: normal;
     font-style: normal;
   }
