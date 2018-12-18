@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'BigNoodleTooOblique';
+    src: url('BigNoodleTooOblique.eot');
+    src: url('BigNoodleTooOblique.eot?#iefix') format('embedded-opentype'),
+        url('BigNoodleTooOblique.woff2') format('woff2'),
+        url('BigNoodleTooOblique.woff') format('woff'),
+        url('BigNoodleTooOblique.ttf') format('truetype'),
+        url('BigNoodleTooOblique.svg#BigNoodleTooOblique') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, h1, h2, h3 {
+  font-family: 'BigNoodleTooOblique', Fallback, sans-serif;
+}
+
+h4, h5 {font-family: arial}
