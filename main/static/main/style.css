@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'BigNoodleTooOblique';
+    src: url('/fonts/BigNoodleTooOblique.woff2') format('woff2'),
+         url('/fonts/BigNoodleTooOblique.woff') format('woff');
+    src: url('/fonts/BigNoodleTooOblique.ttf')
+    font-weight: normal;
+    font-style: normal;
+}
